@@ -1,9 +1,8 @@
 package handlers
 
 import (
-	_ "github.com/CloudyKit/jet/v6"
 	"github.com/simpleittools/celeritas"
-	"github.com/simpleittools/celeritastest/data"
+	"myapp/data"
 	"net/http"
 	"time"
 )
