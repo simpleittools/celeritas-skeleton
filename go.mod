@@ -1,6 +1,6 @@
 module myapp
-go 1.18
 
+go 1.18
 
 require (
 	github.com/CloudyKit/jet/v6 v6.1.0
@@ -78,6 +78,7 @@ require (
 	github.com/robfig/cron/v3 v3.0.1 // indirect
 	github.com/sendgrid/rest v2.6.3+incompatible // indirect
 	github.com/sendgrid/sendgrid-go v3.8.0+incompatible // indirect
+	github.com/simpleittools/celeritas v1.0.0 // indirect
 	github.com/sirupsen/logrus v1.9.0 // indirect
 	github.com/toorop/go-dkim v0.0.0-20201103131630-e1cd1a0a5208 // indirect
 	github.com/vanng822/css v1.0.1 // indirect

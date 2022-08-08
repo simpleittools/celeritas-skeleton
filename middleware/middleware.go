@@ -2,7 +2,7 @@ package middleware
 
 import (
 	"github.com/simpleittools/celeritas"
-	"github.com/simpleittools/celeritastest/data"
+	"myapp/data"
 )
 
 type Middleware struct {
