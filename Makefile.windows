@@ -7,22 +7,16 @@ build:
 	@go build -o tmp/${BINARY_NAME} .
 	@echo Celeritas built!
 
-run: build
+run:
 	@echo Staring Celeritas...
-	@.\tmp\${BINARY_NAME} &
+	@start /min cmd /c tmp\${BINARY_NAME} &
 	@echo Celeritas started!
 
 clean:
 	@echo Cleaning...
+	@DEL ${BINARY_NAME}
 	@go clean
-	@del .\tmp\${BINARY_NAME}
 	@echo Cleaned!
-
-start_compose:
-	docker-compose up -d
-
-stop_compose:
-	docker-compose down
 
 test:
 	@echo Testing...
@@ -30,7 +24,7 @@ test:
 	@echo Done!
 
 start: run
-    
+
 stop:
 	@echo "Starting the front end..."
 	@taskkill /IM ${BINARY_NAME} /F
